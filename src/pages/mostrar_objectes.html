@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="../js/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Selecciona</title>
+  </head>
+
+  <body class="relative overflow-x-hidden bg-primary text-white">
+    <header
+      class="hidden items-center justify-between bg-secondary1 p-4 md:flex"
+    >
+      <div class="text-xl">Selecciona</div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="home.html" class="hover:text-hover">Home</a>
+          </li>
+          <li>
+            <a href="new_object.html" class="hover:text-hover">New Post</a>
+          </li>
+          <li>
+            <a href="xat.html" class="hover:text-hover">Messages</a>
+          </li>
+          <li>
+            <a href="serch.html" class="hover:text-hover">Search</a>
+          </li>
+          <li>
+            <a href="perfil.html" class="hover:text-gray-400">Profile</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <header class="flex items-center justify-between bg-primary p-4 md:hidden">
+      <div class="text-xl">Search</div>
+      <label
+        for="menu-toggle"
+        class="cursor-pointer text-xl"
+        onclick="toggleMenu()"
+      >
+        <div class="space-y-1">
+          <div class="h-0.5 w-6 bg-white"></div>
+          <div class="h-0.5 w-6 bg-white"></div>
+          <div class="h-0.5 w-6 bg-white"></div>
+        </div>
+      </label>
+    </header>
+
+    <aside
+      id="side-menu"
+      class="fixed right-0 top-16 z-50 h-full w-64 translate-x-full transform bg-primary p-6 transition-transform duration-300 ease-in-out md:hidden"
+    >
+      <ul class="space-y-6">
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">home</span>
+          <a href="home.html" class="text-white">Home</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">add</span>
+          <a href="new_object.html" class="text-white">New Post</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">message</span>
+          <a href="xat.html" class="text-white">Messages</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">search</span>
+          <a href="serch.html" class="text-white">Search</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">person</span>
+          <a href="perfil.html" class="text-white">Profile</a>
+        </li>
+      </ul>
+    </aside>
+
+    <main class="mx-auto max-w-6xl p-4">
+      <h1 class="mb-4 text-xl font-bold">Selecciona el teu producte</h1>
+      <p class="mb-6 text-hover">
+        Els teus productes amb un preu similar al objecte que vols obtenir
+      </p>
+
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+        <div class="rounded-lg bg-primary p-4">
+          <a href="confirmar_proposta.html">
+            <img
+              src="../assets/cafetera.png"
+              alt="Coffee Machine"
+              class="mb-2 w-full h-60 object-cover rounded-lg"
+            />
+            <h2 class="text-sm font-semibold">Coffee Machine</h2>
+            <p class="text-hover">50€</p>
+          </a>
+        </div>
+
+        <div class="rounded-lg bg-primary p-4">
+          <a href="confirmar_proposta.html">
+            <img
+              src="../assets/crispetes.jpg"
+              alt="Manta"
+              class="mb-2 w-full h-60 object-cover rounded-lg"
+            />
+            <h2 class="text-sm font-semibold">Popcorn Machine</h2>
+            <p class="text-gray-400">45€</p>
+          </a>
+        </div>
+
+        <div class="rounded-lg bg-primary p-4">
+          <a href="confirmar_proposta.html">
+            <img
+              src="../assets/mouse.jpg"
+              alt="Mouse"
+              class="mb-2 w-full h-60 object-cover rounded-lg"
+            />
+            <h2 class="text-sm font-semibold">Gaming mouse</h2>
+            <p class="text-gray-400">47€</p>
+          </a>
+        </div>
+
+        <div class="rounded-lg bg-primary p-4">
+          <a href="confirmar_proposta.html">
+            <img
+              src="../assets/auriculares.jpg"
+              alt="Auriculars"
+              class="mb-2 w-full h-60 object-cover rounded-lg"
+            />
+            <h2 class="text-sm font-semibold">Auriculars</h2>
+            <p class="text-gray-400">52€</p>
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

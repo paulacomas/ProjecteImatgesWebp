@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="./src/js/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+
+  <body
+    class="flex items-center justify-center min-h-screen bg-primary text-white"
+  >
+    <div
+      class="w-full max-w-xs sm:max-w-sm lg:max-w-lg px-6 py-8 bg-secondary1 rounded-lg shadow-md"
+    >
+      <h2
+        class="text-2xl font-semibold mb-6 lg:text-3xl text-left lg:text-center"
+      >
+        Benvingut!
+      </h2>
+
+      <form action="./src/pages/home.html" class="space-y-4">
+        <input
+          type="text"
+          placeholder="Email o username"
+          class="w-full px-4 py-2 bg-tertiary text-hover rounded-md focus:outline-none focus:ring-2 focus:ring-secondary2 text-left"
+        />
+
+        <div class="flex items-center relative">
+          <input
+            id="password"
+            type="password"
+            placeholder="Password"
+            class="w-full px-4 py-2 pr-10 bg-tertiary text-hover rounded-md focus:outline-none focus:ring-2 focus:ring-secondary2"
+          />
+          <button
+            type="button"
+            class="absolute inset-y-0 right-0 flex items-center px-3 text-hover"
+            aria-label="Toggle password visibility"
+          >
+            <span class="material-icons">visibility</span>
+          </button>
+        </div>
+
+        <a
+          href="#"
+          class="text-sm text-tertiary hover:underline block text-left lg:text-center"
+          >No recordes la contrasenya?</a
+        >
+
+        <button
+          type="submit"
+          class="w-full py-2 bg-secondary2 hover:bg-hover2 rounded-md text-white font-semibold transition duration-200"
+        >
+          Log in
+        </button>
+
+        <button
+          type="button"
+          class="w-full py-2 bg-tertiary rounded-md text-white font-semibold transition duration-200"
+        >
+          Continue with Google
+        </button>
+      </form>
+
+      <p class="text-sm mt-6 text-hover text-left lg:text-center">
+        No estas registrat?
+        <a
+          href="./src/pages/register.html"
+          class="text-secondary2 hover:text-hover2 hover:underline"
+        >
+          Registrar-se
+        </a>
+      </p>
+    </div>
+  </body>
+</html>

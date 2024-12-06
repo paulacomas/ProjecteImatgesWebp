@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="../js/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Detalls proposta</title>
+  </head>
+
+  <body class="relative overflow-x-hidden bg-primary text-white">
+    <header
+      class="hidden items-center justify-between bg-secondary1 p-4 md:flex"
+    >
+      <div class="text-xl">Detalls proposta</div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="home.html" class="hover:text-hover">Home</a>
+          </li>
+          <li>
+            <a href="new_object.html" class="hover:text-hover">New Post</a>
+          </li>
+          <li><a href="xat.html" class="hover:text-hover">Messages</a></li>
+          <li><a href="serch.html" class="hover:text-hover">Search</a></li>
+          <li><a href="perfil.html" class="hover:text-hover">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <header
+      class="flex items-center justify-between bg-secondary1 p-4 md:hidden"
+    >
+      <div class="text-xl">Detalls proposta</div>
+      <label
+        for="menu-toggle"
+        class="cursor-pointer text-xl"
+        onclick="toggleMenu()"
+      >
+        <div class="space-y-1">
+          <div class="h-0.5 w-6 bg-white"></div>
+          <div class="h-0.5 w-6 bg-white"></div>
+          <div class="h-0.5 w-6 bg-white"></div>
+        </div>
+      </label>
+    </header>
+
+    <aside
+      id="side-menu"
+      class="fixed right-0 top-16 z-50 h-full w-64 translate-x-full transform bg-secondary1 p-6 transition-transform duration-300 ease-in-out md:hidden"
+    >
+      <ul class="space-y-6">
+        <li class="flex items-center space-x-3">
+          <span class="material-icons text-2xl">home</span>
+          <a href="home.html" class="text-white">Home</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons text-2xl">add</span>
+          <a href="new_object.html" class="text-white">New Post</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons text-2xl">message</span>
+          <a href="xat.html" class="text-white">Messages</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons text-2xl">search</span>
+          <a href="serch.html" class="text-white">Search</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons text-2xl">person</span>
+          <a href="perfil.html" class="text-white">Profile</a>
+        </li>
+      </ul>
+    </aside>
+
+    <div
+      class="mx-auto max-w-md overflow-hidden rounded-lg bg-secondary1 shadow-lg md:max-w-2xl lg:max-w-3xl mt-8 mb-8 p-6"
+    >
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center space-x-4">
+          <img
+            class="w-16 h-16 md:w-24 md:h-24 rounded-full object-cover"
+            src="../assets/img-perfil.png"
+            alt="User profile picture"
+          />
+          <div>
+            <h2 class="text-xl font-semibold">Alberto</h2>
+          </div>
+        </div>
+
+        <button class="text-secondary2">
+          <span class="material-icons text-secondary2 text-2xl">message</span>
+        </button>
+      </div>
+
+      <div class="flex justify-around items-center mt-6 space-x-8">
+        <div class="text-center">
+          <p class="text-sm font-semibold text-white mb-2">El teu objecte</p>
+          <img
+            class="w-32 h-32 md:w-48 md:h-48 object-cover rounded-lg"
+            src="../assets/cafetera.png"
+            alt="Coffee Machine"
+          />
+          <p class="mt-2">Coffee Machine</p>
+        </div>
+
+        <div class="mx-4">
+          <span class="material-icons text-secondary2 text-4xl"
+            >change_circle</span
+          >
+        </div>
+
+        <div class="text-center">
+          <p class="text-sm font-semibold text-white mb-2">
+            L'objecte que obtindras
+          </p>
+          <img
+            class="w-32 h-32 md:w-48 md:h-48 object-cover rounded-lg"
+            src="../assets/crispetes.jpg"
+            alt="Popcorn Machine"
+          />
+          <p class="mt-2">Popcorn Machine</p>
+        </div>
+      </div>
+
+      <div class="flex justify-between mt-6 gap-4">
+        <button
+          class="w-full bg-secondary2 text-white font-semibold py-2 rounded-lg"
+        >
+          Acceptar
+        </button>
+      </div>
+
+      <div class="flex justify-between mt-4 gap-4">
+        <button
+          class="w-full bg-tertiary text-white font-semibold py-2 rounded-lg"
+        >
+          Contraproposta
+        </button>
+        <button
+          class="w-full bg-tertiary text-white font-semibold py-2 rounded-lg"
+        >
+          Denegar
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

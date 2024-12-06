@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <script type="module" src="../js/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="relative overflow-x-hidden bg-primary text-white flex items-center justify-center min-h-screen"
+  >
+    <main class="w-full max-w-xs sm:max-w-sm lg:max-w-md mx-auto p-4">
+      <div class="w-full px-6 py-8 bg-secondary1 shadow-md rounded-lg">
+        <h2
+          class="text-center text-2xl font-semibold text-white mb-6 sm:text-3xl"
+        >
+          Registre
+        </h2>
+
+        <form action="/index.html" class="space-y-4">
+          <div>
+            <input
+              class="w-full px-4 py-2 bg-tertiary text-hover rounded-md focus:outline-none focus:ring-2 focus:ring-secondary2"
+              id="nom"
+              type="text"
+              placeholder="Nom"
+            />
+          </div>
+
+          <div>
+            <input
+              class="w-full px-4 py-2 bg-tertiary text-hover rounded-md focus:outline-none focus:ring-2 focus:ring-secondary2"
+              id="cognom"
+              type="text"
+              placeholder="Cognom"
+            />
+          </div>
+
+          <div>
+            <input
+              class="w-full px-4 py-2 bg-tertiary text-hover rounded-md focus:outline-none focus:ring-2 focus:ring-secondary2"
+              id="email"
+              type="email"
+              placeholder="Email"
+            />
+          </div>
+
+          <div>
+            <input
+              class="w-full px-4 py-2 bg-tertiary text-hover rounded-md focus:outline-none focus:ring-2 focus:ring-secondary2"
+              id="password"
+              type="password"
+              placeholder="Password"
+            />
+          </div>
+
+          <div class="flex items-center justify-center mt-6">
+            <button
+              class="w-full sm:w-auto px-6 py-2 bg-secondary2 hover:bg-hover2 text-white font-bold rounded-md"
+              type="submit"
+            >
+              Continue
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

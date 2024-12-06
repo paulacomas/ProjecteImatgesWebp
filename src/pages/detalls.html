@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="../js/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Detalls</title>
+  </head>
+
+  <body
+    class="relative overflow-x-hidden bg-primary text-white h-screen flex flex-col"
+  >
+    <header
+      class="hidden items-center justify-between bg-secondary1 p-4 md:flex"
+    >
+      <div class="text-xl">Detalls</div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="home.html" class="hover:text-hover">Home</a>
+          </li>
+          <li>
+            <a href="new_object.html" class="hover:text-hover">New Post</a>
+          </li>
+          <li>
+            <a href="xat.html" class="hover:text-hover">Messages</a>
+          </li>
+          <li>
+            <a href="serch.html" class="hover:text-hover">Search</a>
+          </li>
+          <li>
+            <a href="perfil.html" class="hover:text-hover">Profile</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <header
+      class="flex items-center justify-between bg-secondary1 p-4 md:hidden"
+    >
+      <div class="text-xl">Detalls</div>
+      <label
+        for="menu-toggle"
+        class="cursor-pointer text-xl"
+        onclick="toggleMenu()"
+      >
+        <div class="space-y-1">
+          <div class="h-0.5 w-6 bg-white"></div>
+          <div class="h-0.5 w-6 bg-white"></div>
+          <div class="h-0.5 w-6 bg-white"></div>
+        </div>
+      </label>
+    </header>
+
+    <aside
+      id="side-menu"
+      class="fixed right-0 top-16 z-50 h-full w-64 translate-x-full transform bg-secondary1 p-6 transition-transform duration-300 ease-in-out md:hidden"
+    >
+      <ul class="space-y-6">
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">home</span>
+          <a href="home.html" class="text-white">Home</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">add</span>
+          <a href="new_object.html" class="text-white">New Post</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">message</span>
+          <a href="xat.html" class="text-white">Messages</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">search</span>
+          <a href="serch.html" class="text-white">Search</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">person</span>
+          <a href="perfil.html" class="text-white">Profile</a>
+        </li>
+      </ul>
+    </aside>
+
+    <main
+      class="flex-grow mx-auto w-full max-w-screen-lg mt-4 flex flex-col items-center"
+    >
+      <div class="flex overflow-x-auto md:hidden mt-4">
+        <div class="flex space-x-2">
+          <img
+            src="../assets/cafetera.png"
+            alt="Cafetera"
+            class="h-96 w-96 rounded-lg object-cover flex-shrink-0"
+          />
+          <img
+            src="../assets/cafetera2.jpg"
+            alt="Cafetera"
+            class="h-96 w-96 rounded-lg object-cover flex-shrink-0"
+          />
+          <img
+            src="../assets/cafetera3.jpg"
+            alt="Cafetera"
+            class="h-96 w-96 rounded-lg object-cover flex-shrink-0"
+          />
+        </div>
+      </div>
+
+      <div class="hidden md:grid md:grid-cols-3 md:gap-6 mt-8">
+        <div class="flex flex-col items-center">
+          <img
+            src="../assets/cafetera.png"
+            alt="Cafetera"
+            class="h-[300px] w-[400px] rounded-lg object-cover"
+          />
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            src="../assets/cafetera2.jpg"
+            alt="Cafetera"
+            class="h-[300px] w-[400px] rounded-lg object-cover"
+          />
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            src="../assets/cafetera3.jpg"
+            alt="Cafetera"
+            class="h-[300px] w-[400px] rounded-lg object-cover"
+          />
+        </div>
+      </div>
+    </main>
+
+    <div class="w-full max-w-md mt-8 mx-auto text-center md:text-center">
+      <h2 class="text-white text-2xl font-semibold">Cafetera</h2>
+      <p class="text-gray-400 mt-4">
+        La Cafetera Espresso Automática "Café Maestro" es la compañera ideal
+        para los amantes del café que buscan calidad y comodidad en cada taza.
+        Con un diseño elegante y moderno, esta cafetera no solo destaca por su
+        apariencia, sino también por su tecnología avanzada que garantiza un
+        sabor excepcional.
+      </p>
+      <p class="text-white text-2xl font-semibold mt-2">50€</p>
+    </div>
+
+    <div class="w-full max-w-md mt-8 mx-auto flex flex-col space-y-4 mb-8">
+      <a
+        href="mostrar_objectes.html"
+        class="bg-secondary2 text-white py-3 rounded-lg font-semibold hover:bg-hover2 transition text-center block"
+      >
+        Intercanviar
+      </a>
+      <button
+        class="bg-tertiary text-white py-3 rounded-lg font-semibold hover:bg-hover transition"
+      >
+        Enviar missatge al vendedor
+      </button>
+    </div>
+  </body>
+</html>

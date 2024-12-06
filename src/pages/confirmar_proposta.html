@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="../js/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Confirmar proposta</title>
+  </head>
+
+  <body class="relative overflow-x-hidden bg-primary text-white">
+    <header class="hidden md:flex items-center justify-between bg-secondary1 p-4">
+      <div class="text-xl">Confirmar proposta</div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="home.html" class="hover:text-hover">Home</a>
+          </li>
+          <li>
+            <a href="new_object.html" class="hover:text-hover">New Post</a>
+          </li>
+          <li>
+            <a href="xat.html" class="hover:text-hover flex items-center">Messages</a>
+          </li>
+          <li>
+            <a href="serch.html" class="hover:text-hover">Search</a>
+          </li>
+          <li>
+            <a href="perfil.html" class="hover:text-hover">Profile</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <header class="flex items-center justify-between bg-secondary1 p-4 md:hidden">
+      <div class="text-xl">Confirmar proposta</div>
+      <label
+        for="menu-toggle"
+        class="cursor-pointer text-xl"
+        onclick="toggleMenu()"
+      >
+        <div class="space-y-1">
+          <div class="h-0.5 w-6 bg-white"></div>
+          <div class="h-0.5 w-6 bg-white"></div>
+          <div class="h-0.5 w-6 bg-white"></div>
+        </div>
+      </label>
+    </header>
+
+    <aside
+      id="side-menu"
+      class="fixed right-0 top-16 z-50 h-full w-64 translate-x-full transform bg-secondary1 p-6 transition-transform duration-300 ease-in-out md:hidden"
+    >
+      <ul class="space-y-6">
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">home</span>
+          <a href="home.html" class="text-white">Home</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">add</span>
+          <a href="new_object.html" class="text-white">New Post</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">send</span>
+          <a href="xat.html" class="text-white">Messages</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">search</span>
+          <a href="serch.html" class="text-white">Search</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">person</span>
+          <a href="perfil.html" class="text-white">Profile</a>
+        </li>
+      </ul>
+    </aside>
+
+    <main class="mx-auto max-w-6xl p-4">
+      <div class="mb-6">
+        <h2 class="mb-2 text-lg font-semibold">Estas obtenint</h2>
+        <div class="mb-4 flex items-center space-x-4">
+          <img
+            src="../assets/crispetes.jpg"
+            alt="Popcorn Machine"
+            class="h-16 w-16 rounded-lg"
+          />
+          <p class="text-sm font-semibold">Popcorn Machine</p>
+        </div>
+        <div class="mb-4 grid grid-cols-2 gap-4">
+          <div class="rounded-lg bg-secondary1 p-4">
+            <p class="text-sm text-hover">Any</p>
+            <p class="text-lg font-semibold">1 any</p>
+          </div>
+          <div class="rounded-lg bg-secondary1 p-4">
+            <p class="text-sm text-hover">Estat</p>
+            <p class="text-lg font-semibold">Com nou</p>
+          </div>
+          <div class="col-span-2 rounded-lg bg-secondary1 p-4">
+            <p class="text-sm text-hover">Preu</p>
+            <p class="text-lg font-semibold">50€</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <h2 class="mb-2 text-lg font-semibold">Estas donant</h2>
+        <div class="mb-4 flex items-center space-x-4">
+          <img
+            src="../assets/cafetera.png"
+            alt="Coffee Machine"
+            class="h-16 w-16 rounded-lg"
+          />
+          <p class="text-sm font-semibold">Coffee Machine</p>
+        </div>
+        <div class="mb-4 grid grid-cols-2 gap-4">
+          <div class="rounded-lg bg-secondary1 p-4">
+            <p class="text-sm text-hover">Any</p>
+            <p class="text-lg font-semibold">1 any</p>
+          </div>
+          <div class="rounded-lg bg-secondary1 p-4">
+            <p class="text-sm text-hover">Estat</p>
+            <p class="text-lg font-semibold">Com nou</p>
+          </div>
+          <div class="col-span-2 rounded-lg bg-secondary1 p-4">
+            <p class="text-sm text-hover">Preu</p>
+            <p class="text-lg font-semibold">50€</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center mb-6">
+        <button
+          type="submit"
+          class="w-96 rounded-lg bg-secondary2 p-4 text-center font-semibold text-white hover:bg-hover2 transition duration-200"
+        >
+          Enviar proposta
+        </button>
+      </div>
+    </main>
+  </body>
+</html>

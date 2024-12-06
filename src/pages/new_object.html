@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New object</title>
+    <script type="module" src="../js/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="relative overflow-x-hidden bg-primary text-white">
+    <header class="hidden items-center justify-between bg-gray-800 p-4 md:flex">
+      <div class="text-xl">New object</div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="home.html" class="hover:text-hover">Home</a>
+          </li>
+          <li>
+            <a href="new_object.html" class="hover:text-hover">New Post</a>
+          </li>
+          <li><a href="xat.html" class="hover:text-hover">Messages</a></li>
+          <li><a href="serch.html" class="hover:text-hover">Search</a></li>
+          <li>
+            <a href="perfil.html" class="hover:text-hover">Profile</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <header class="flex items-center justify-between bg-secondary1 p-4 md:hidden">
+      <div class="text-xl">New object</div>
+      <label
+        for="menu-toggle"
+        class="cursor-pointer text-xl"
+        onclick="toggleMenu()"
+      >
+        <div class="space-y-1">
+          <div class="h-0.5 w-6 bg-white"></div>
+          <div class="h-0.5 w-6 bg-white"></div>
+          <div class="h-0.5 w-6 bg-white"></div>
+        </div>
+      </label>
+    </header>
+
+    <aside
+      id="side-menu"
+      class="fixed right-0 top-16 z-50 h-full w-64 translate-x-full transform bg-secondary1 p-6 transition-transform duration-300 ease-in-out md:hidden"
+    >
+      <ul class="space-y-6">
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">home</span>
+          <a href="home.html" class="text-white">Home</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">add</span>
+          <a href="new_object.html" class="text-white">New Post</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">message</span>
+          <a href="xat.html" class="text-white">Messages</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">search</span>
+          <a href="serch.html" class="text-white">Search</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">person</span>
+          <a href="perfil.html" class="text-white">Profile</a>
+        </li>
+      </ul>
+    </aside>
+
+    <main class="mx-auto max-w-6xl p-4">
+      <form class="space-y-6">
+        <div>
+          <label for="name" class="mb-2 block text-sm font-medium">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="block w-full rounded-lg border-none bg-secondary1 p-3"
+            placeholder="Enter name"
+          />
+        </div>
+
+        <div>
+          <label for="description" class="mb-2 block text-sm font-medium"
+            >Descripcio</label
+          >
+          <textarea
+            id="description"
+            rows="4"
+            class="block w-full rounded-lg border-none bg-secondary1 p-3"
+            placeholder="Enter description"
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="price" class="mb-2 block text-sm font-medium">Preu</label>
+          <input
+            type="text"
+            id="price"
+            class="block w-full rounded-lg border-none bg-secondary1 p-3"
+            placeholder="Enter price"
+          />
+        </div>
+
+        <div>
+          <label class="mb-2 block text-sm font-medium">Fotos</label>
+          <div class="flex space-x-4">
+            <div class="h-24 w-24 rounded-lg bg-tertiary">
+              <img
+                src="../assets/cafetera.png"
+                alt="Uploaded Image"
+                class="h-full w-full rounded-lg object-cover"
+              />
+            </div>
+
+            <label
+              class="flex h-24 w-24 cursor-pointer items-center justify-center rounded-lg bg-secondary1"
+            >
+              <span class="text-4xl text-hover">+</span>
+              <input type="file" class="hidden" />
+            </label>
+          </div>
+        </div>
+
+        <div class="flex justify-center mb-6 pt-6">
+          <button
+            type="submit"
+            class="w-96 rounded-lg bg-secondary2 p-4 text-center font-semibold text-white hover:bg-hover2 transition duration-200"
+          >
+            Continuar
+          </button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
